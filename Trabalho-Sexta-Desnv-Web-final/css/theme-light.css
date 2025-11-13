@@ -1,0 +1,13 @@
+/* theme-light.css */
+:root{
+  --bg: #ffffff;
+  --text:#222222;
+  --primary:#b91c1c;
+  --card:#f8f8f8;
+}
+body{ background:var(--bg); color:var(--text); font-family: Arial, sans-serif; }
+.header{ padding:12px; background:var(--card); display:flex; justify-content:space-between; align-items:center; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.btn{ padding:8px 12px; border-radius:6px; border:1px solid rgba(0,0,0,0.08); background:transparent; cursor:pointer; }
+table{ border-collapse:collapse; width:100%; margin-top:12px; }
+th,td{ border:1px solid #ddd; padding:8px; text-align:left; }
+.validation-msg{ color: #b91c1c; font-size:0.9em; margin-top:4px; }

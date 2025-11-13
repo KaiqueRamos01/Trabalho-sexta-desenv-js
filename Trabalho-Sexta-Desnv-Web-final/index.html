@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EVOLVE Academia</title>
+  <link rel="icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link id="theme-link" rel="stylesheet" href="css/theme-light.css">
+</head>
+<body>
+    <div class="header"><div class="brand"><a href="index.html">Início</a></div><div><button class="btn" id="themeToggle">Tema Escuro</button></div></div>
+  <header class="header">
+    <div class="brand">
+      <img src="images/logo.png" alt="EVOLVE">
+      <div>
+        <h1>EVOLVE</h1>
+        <div style="font-size:12px;color:var(--muted)">Academia • Movimento • Evolução</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="pages/planos.html">Planos</a>
+      <a href="pages/equipe.html">Equipe</a>
+      <a href="pages/contato.html">Contato</a>
+      <a href="pages/login.html" class="cta">Entrar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card fade-in">
+      <h2>Transforme seu corpo. Evolua sua rotina.</h2>
+      <p class="lead">Planos flexíveis, acompanhamento profissional e um ambiente pensado para te motivar todos os dias. Venha treinar com a gente!</p>
+      <div class="stats">
+        <div class="stat"><strong>+120</strong><div style="font-size:12px;color:var(--muted)">Alunos ativos</div></div>
+        <div class="stat"><strong>8</strong><div style="font-size:12px;color:var(--muted)">Instrutores</div></div>
+        <div class="stat"><strong>3</strong><div style="font-size:12px;color:var(--muted)">Planos</div></div>
+      </div>
+      <div style="margin-top:18px;">
+        <a href="pages/planos.html" class="cta">Ver Planos</a>
+      </div>
+    </div>
+
+    <aside class="hero-card fade-in">
+      <h3>Login rápido</h3>
+      <div class="login-wrap">
+        <div class="field">
+          <input class="input" id="email" placeholder=" " type="email">
+          <label class="flabel" for="email">E-mail</label>
+        </div>
+        <div class="field">
+          <input class="input" id="senha" placeholder=" " type="password">
+          <label class="flabel" for="senha">Senha</label>
+        </div>
+        <button class="cta" id="loginBtn">Entrar</button>
+        <div style="font-size:13px;color:var(--muted);margin-top:6px">Esqueceu a senha? <a href="pages/contato.html">Recuperar</a></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="plans">
+    <h2 style="margin:0 8% 12px 8%;">Nossos Planos</h2>
+    <div class="plans-grid" style="padding:0 8%;">
+      <div class="plan fade-in">
+        <h3>Plano Básico</h3>
+        <div class="price">R$79 / mês</div>
+        <div class="features">
+          Acesso à academia em horários livres<br>
+          2 treinos por semana sugeridos<br>
+          Avaliação inicial
+        </div>
+        <div style="margin-top:12px"><a class="cta" href="pages/planos.html">Escolher</a></div>
+      </div>
+
+      <div class="plan fade-in">
+        <h3>Plano Plus</h3>
+        <div class="price">R$129 / mês</div>
+        <div class="features">
+          Acesso ilimitado<br>
+          1 acompanhamento mensal com instrutor<br>
+          Aula em grupo inclusa
+        </div>
+        <div style="margin-top:12px"><a class="cta" href="pages/planos.html">Escolher</a></div>
+      </div>
+
+      <div class="plan fade-in">
+        <h3>Plano Premium</h3>
+        <div class="price">R$199 / mês</div>
+        <div class="features">
+          Aulas ilimitadas + acompanhamento semanal<br>
+          Plano nutricional inicial<br>
+          Vantagens exclusivas
+        </div>
+        <div style="margin-top:12px"><a class="cta" href="pages/planos.html">Escolher</a></div>
+      </div>
+    </div>
+  </section>
+  
+<section style="padding:60px 8%; background:#fff;">
+  <h2 style="text-align:center; margin-bottom:20px;">Nossa Localização</h2>
+  <div style="display:flex; justify-content:center;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3783815062093!2d-47.02177492486341!3d-22.899410479260272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cfa09f64cebf%3A0x8ea9e4c01235a8c1!2sR.%20A%C3%A7a%C3%AD%2C%20106%20-%20Bairro%20das%20Palmeiras%2C%20Campinas%20-%20SP%2C%2013092-587!5e0!3m2!1spt-BR!2sbr!4v1758240328085!5m2!1spt-BR!2sbr" 
+      width="80%" 
+      height="400" 
+      style="border:0; border-radius:20px; box-shadow:0 6px 18px rgba(0,0,0,0.2);" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div>© <strong>EVOLVE</strong> — Todos os direitos reservados</div>
+    <div style="font-size:13px;color:var(--muted)">Contato: (19) 3365-7785</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+    <script src="js/theme_toggle.js"></script>
+</body>
+</html>

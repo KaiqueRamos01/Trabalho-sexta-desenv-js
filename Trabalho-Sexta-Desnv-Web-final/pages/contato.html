@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — EVOLVE</title>
+  <link rel="stylesheet" href="../css/style.css">
+    <link id="theme-link" rel="stylesheet" href="css/theme-light.css">
+</head>
+<body>
+    <div class="header"><div class="brand"><a href="index.html">Início</a></div><div><button class="btn" id="themeToggle">Tema Escuro</button></div></div>
+  <header class="header">
+    <div class="brand">
+      <img src="../images/logo.png" alt="EVOLVE" style="height:44px">
+      <h1>EVOLVE</h1>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="planos.html">Planos</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html" class="cta">Contato</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main style="padding:40px 8%">
+    <h2>Fale conosco</h2>
+    <p class="lead">Preencha o formulário e retornaremos o mais rápido possível.</p>
+    <div class="hero-card" style="max-width:640px;margin-top:20px">
+      <form id="contactForm">
+        <div class="field">
+          <input class="input" id="nome" placeholder=" " type="text" required>
+          <label class="flabel" for="nome">Nome</label>
+        </div>
+        <div class="field">
+          <input class="input" id="email" placeholder=" " type="email" required>
+          <label class="flabel" for="email">E-mail</label>
+        </div>
+        <div class="field">
+          <input class="input" id="Assunto" placeholder=" " type="text" required>
+          <label class="flabel" for="assunto">Assunto</label>
+        </div>
+        <div class="field">
+          <textarea class="input" id="mensagem" placeholder=" " rows="4" required></textarea>
+          <label class="flabel" for="mensagem">Mensagem</label>
+        </div>
+        <button class="cta" type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>© EVOLVE — Todos os direitos reservados</div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Mensagem enviada!');
+      this.reset();
+    });
+  </script>
+    <script src="../js/theme_toggle.js"></script>
+    <script src="../js/validacao.js"></script>
+</body>
+</html>

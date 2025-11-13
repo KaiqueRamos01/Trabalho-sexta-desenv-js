@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Plano Básico",
+    "duracao": "1 mês",
+    "preco": "R$ 49,90"
+  },
+  {
+    "nome": "Plano Mensal",
+    "duracao": "3 meses",
+    "preco": "R$ 129,90"
+  },
+  {
+    "nome": "Plano Anual",
+    "duracao": "12 meses",
+    "preco": "R$ 399,90"
+  }
+]

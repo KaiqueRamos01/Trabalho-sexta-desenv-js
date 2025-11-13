@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — EVOLVE</title>
+  <link rel="stylesheet" href="../css/style.css">
+    <link id="theme-link" rel="stylesheet" href="css/theme-light.css">
+</head>
+<body>
+    <div class="header"><div class="brand"><a href="index.html">Início</a></div><div><button class="btn" id="themeToggle">Tema Escuro</button></div></div>
+  <header class="header">
+    <div class="brand">
+      <img src="../images/logo.png" alt="EVOLVE" style="height:44px">
+      <div>
+        <h1>EVOLVE</h1>
+        <div style="font-size:12px;color:var(--muted)">Área do Aluno</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="planos.html">Planos</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main style="padding:40px 8%; display:flex; justify-content:center">
+    <div class="hero-card" style="max-width:520px; width:100%">
+      <h2>Entrar na sua conta</h2>
+      <p class="lead">Use seu e-mail e senha para acessar sua área de aluno.</p>
+      <div class="login-wrap" style="margin-top:12px">
+        <div class="field">
+          <input class="input" id="lg-email" placeholder=" " type="email">
+          <label class="flabel" for="lg-email">E-mail</label>
+        </div>
+        <div class="field">
+          <input class="input" id="lg-pass" placeholder=" " type="password">
+          <label class="flabel" for="lg-pass">Senha</label>
+        </div>
+        <button class="cta" id="lg-btn">Entrar</button>
+        <div style="margin-top:10px; color:var(--muted); font-size:13px;">Ainda não tem conta? <a href="../pages/contato.html">Fale conosco</a></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Simulação simples de login com feedback visual
+    document.getElementById('lg-btn').addEventListener('click', function(){
+      const email = document.getElementById('lg-email').value.trim();
+      const pass = document.getElementById('lg-pass').value.trim();
+      if(!email || !pass){
+        alert('Preencha e-mail e senha.');
+        return;
+      }
+      // animação de sucesso e redirecionamento simulado
+      this.textContent = 'Entrando...';
+      setTimeout(()=> {
+        alert('Login bem-sucedido (simulado). Redirecionando para sua área.');
+        window.location.href = "../index.html";
+      }, 900);
+    });
+  </script>
+    <script src="../js/theme_toggle.js"></script>
+</body>
+</html>

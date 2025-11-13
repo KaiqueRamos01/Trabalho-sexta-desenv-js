@@ -1,0 +1,13 @@
+/* theme-dark.css */
+:root{
+  --bg: #0b0b0b;
+  --text:#e6e6e6;
+  --primary:#ef4444;
+  --card:#111111;
+}
+body{ background:var(--bg); color:var(--text); font-family: Arial, sans-serif; }
+.header{ padding:12px; background:var(--card); display:flex; justify-content:space-between; align-items:center; box-shadow: 0 1px 3px rgba(255,255,255,0.02); }
+.btn{ padding:8px 12px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:transparent; cursor:pointer; color:var(--text); }
+table{ border-collapse:collapse; width:100%; margin-top:12px; }
+th,td{ border:1px solid #222; padding:8px; text-align:left; }
+.validation-msg{ color: #ffb4b4; font-size:0.9em; margin-top:4px; }
